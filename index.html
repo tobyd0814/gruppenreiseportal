@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruppenunterkünfte - Visueller Prototyp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom Tailwind Color - Darker Shade */
+        .bg-teal-500 { background-color: #0d9488; }
+        .hover\:bg-teal-600:hover { background-color: #0f766e; }
+        .text-teal-500 { color: #0d9488; }
+        .hover\:text-teal-500:hover { color: #0d9488; }
+        .focus\:ring-teal-500:focus { --tw-ring-color: #0d9488; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" id="logo" class="text-2xl font-bold text-teal-500 flex items-center">
+                <i class="fa-solid fa-people-roof mr-2"></i>
+                GruppenNest
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">Unterkünfte</a>
+                <a href="#" class="bg-teal-500 text-white px-4 py-2 rounded-full hover:bg-teal-600 transition-colors font-semibold">Werde Gastgeber</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        
+        <!-- ================== STARTSEITE ================== -->
+        <div id="startseite">
+            <!-- Hero Sektion -->
+            <section class="hero-bg h-[60vh] rounded-2xl flex items-center justify-center text-center text-white relative overflow-hidden">
+                <div class="absolute inset-0 bg-black/50 z-0"></div>
+                <div class="relative z-10 p-8">
+                    <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Der perfekte Ort für deine Gruppe.</h1>
+                    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Finde und buche einzigartige Unterkünfte mit Proberäumen, großen Küchen und Platz für unvergessliche Momente.</p>
+                    <button id="finde-unterkunft-btn" class="bg-teal-500 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-teal-600 transform hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-search mr-2"></i> Finde deine Unterkunft
+                    </button>
+                </div>
+            </section>
+
+            <!-- Prozess Erklärung -->
+            <section class="py-16">
+                <h2 class="text-3xl font-bold text-center mb-12">So einfach geht's</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="text-teal-500 text-4xl mb-4"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">1. Suchen & Filtern</h3>
+                        <p class="text-gray-600">Gib deinen Wunschort ein und filtere nach den Bedürfnissen deiner Gruppe – von Instrumenten bis zur Großküche.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="text-teal-500 text-4xl mb-4"><i class="fa-solid fa-calendar-check"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">2. Vergleichen & Buchen</h3>
+                        <p class="text-gray-600">Vergleiche passende Unterkünfte, kläre Details mit dem Gastgeber und buche sicher über unsere Plattform.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                        <div class="text-teal-500 text-4xl mb-4"><i class="fa-solid fa-champagne-glasses"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">3. Gemeinsam Erleben</h3>
+                        <p class="text-gray-600">Genieße eine unvergessliche Zeit mit deiner Gruppe in einer Unterkunft, die perfekt auf euch zugeschnitten ist.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ================== SUCHERGEBNISSEITE ================== -->
+        <div id="suchergebnisseite" class="hidden">
+            <!-- Suchleiste Oben -->
+            <div class="bg-white p-4 rounded-full shadow-lg border border-gray-200 mb-8 flex items-center justify-center space-x-4">
+                <div class="flex-1">
+                    <label for="ort" class="block text-xs font-semibold text-gray-500 ml-3">Ort</label>
+                    <input type="text" id="ort" value="Hamburg" class="w-full p-1 border-0 rounded-full focus:ring-0 text-gray-800 font-medium">
+                </div>
+                <div class="border-l border-gray-200 h-10"></div>
+                <div>
+                    <label for="checkin" class="block text-xs font-semibold text-gray-500 ml-3">Check-In</label>
+                    <input type="text" id="checkin" value="17.10.2025" class="p-1 border-0 rounded-full focus:ring-0 text-gray-800 font-medium">
+                </div>
+                <div class="border-l border-gray-200 h-10"></div>
+                <div>
+                    <label for="checkout" class="block text-xs font-semibold text-gray-500 ml-3">Check-Out</label>
+                    <input type="text" id="checkout" value="24.10.2025" class="p-1 border-0 rounded-full focus:ring-0 text-gray-800 font-medium">
+                </div>
+                <div class="border-l border-gray-200 h-10"></div>
+                <div class="flex items-center">
+                    <div>
+                        <label for="gaeste" class="block text-xs font-semibold text-gray-500 ml-3">Gäste</label>
+                        <input type="text" id="gaeste" value="12 Gäste" class="p-1 border-0 rounded-full focus:ring-0 text-gray-800 font-medium">
+                    </div>
+                    <button class="bg-teal-500 text-white rounded-full w-12 h-12 ml-4 flex items-center justify-center hover:bg-teal-600 transition-colors">
+                        <i class="fa-solid fa-search text-lg"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Filter Sidebar -->
+                <aside class="w-full md:w-1/4">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 sticky top-28">
+                        <h3 class="text-xl font-bold mb-4">Filtern nach</h3>
+                        <div class="space-y-4">
+                            <h4 class="font-semibold text-gray-700">Ausstattung</h4>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-500 focus:ring-teal-500">
+                                <span class="text-gray-700">Instrumente vorhanden</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-500 focus:ring-teal-500" checked>
+                                <span class="text-gray-700">Gemeinsam kochen</span>
+                            </label>
+                             <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-500 focus:ring-teal-500">
+                                <span class="text-gray-700">Proberaum</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-500 focus:ring-teal-500">
+                                <span class="text-gray-700">Grillmöglichkeit</span>
+                            </label>
+
+                            <hr class="my-4">
+                             <h4 class="font-semibold text-gray-700">Unterkunftsart</h4>
+                             <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-500 focus:ring-teal-500">
+                                <span class="text-gray-700">Jugendherberge</span>
+                            </label>
+                             <label class="flex items-center space-x-3 cursor-pointer">
+                                <input type="checkbox" class="h-5 w-5 rounded border-gray-300 text-teal-500 focus:ring-teal-500">
+                                <span class="text-gray-700">Ferienhof</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Ergebnisse -->
+                <section class="flex-1">
+                    <h2 class="text-2xl font-bold mb-4">88 Unterkünfte in Hamburg</h2>
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Unterkunft Karte -->
+                        <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop" alt="Unterkunft Bild" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-lg">Altes Landhaus an der Elbe</h3>
+                                    <span class="flex items-center font-bold"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 4,91</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Großer Gemeinschaftsraum</p>
+                                <p class="font-semibold text-lg">340 € <span class="font-normal text-gray-600">/ Nacht</span></p>
+                            </div>
+                        </div>
+                        <!-- Weitere Karten ... -->
+                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1613553424151-eadd337241d3?q=80&w=1974&auto=format&fit=crop" alt="Unterkunft Bild" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-lg">Musiker-Loft in der Schanze</h3>
+                                    <span class="flex items-center font-bold"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 4,85</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Inklusive Flügel & Proberaum</p>
+                                <p class="font-semibold text-lg">520 € <span class="font-normal text-gray-600">/ Nacht</span></p>
+                            </div>
+                        </div>
+                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1974&auto=format&fit=crop" alt="Unterkunft Bild" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                               <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-lg">Seminarhaus im Grünen</h3>
+                                    <span class="flex items-center font-bold"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 4,95</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Ideal für Workshops und Chöre</p>
+                                <p class="font-semibold text-lg">410 € <span class="font-normal text-gray-600">/ Nacht</span></p>
+                            </div>
+                        </div>
+                         <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=2070&auto=format&fit=crop" alt="Unterkunft Bild" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                               <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-lg">Stadthaus für große Familien</h3>
+                                    <span class="flex items-center font-bold"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 4,78</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Zentrale Lage in Eimsbüttel</p>
+                                <p class="font-semibold text-lg">395 € <span class="font-normal text-gray-600">/ Nacht</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop" alt="Unterkunft Bild" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                               <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-lg">Moderne Villa Blankenese</h3>
+                                    <span class="flex items-center font-bold"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 5,0</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Mit Pool und Blick auf die Elbe</p>
+                                <p class="font-semibold text-lg">750 € <span class="font-normal text-gray-600">/ Nacht</span></p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
+                            <img src="https://images.unsplash.com/photo-1594229384209-230a113d7465?q=80&w=1974&auto=format&fit=crop" alt="Unterkunft Bild" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                               <div class="flex justify-between items-start mb-1">
+                                    <h3 class="font-bold text-lg">Jugendherberge am Hafen</h3>
+                                    <span class="flex items-center font-bold"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 4,60</span>
+                                </div>
+                                <p class="text-gray-600 text-sm mb-2">Preiswert und praktisch</p>
+                                <p class="font-semibold text-lg">250 € <span class="font-normal text-gray-600">/ Nacht</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const startseite = document.getElementById('startseite');
+            const suchergebnisseite = document.getElementById('suchergebnisseite');
+            const findeBtn = document.getElementById('finde-unterkunft-btn');
+            const logo = document.getElementById('logo');
+
+            // Funktion zum Anzeigen der Suchergebnisseite
+            function zeigeSuche() {
+                startseite.classList.add('hidden');
+                suchergebnisseite.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            }
+
+            // Funktion zum Anzeigen der Startseite
+            function zeigeStart() {
+                startseite.classList.remove('hidden');
+                suchergebnisseite.classList.add('hidden');
+                window.scrollTo(0, 0);
+            }
+
+            // Event Listener für den Button
+            findeBtn.addEventListener('click', zeigeSuche);
+            
+            // Event Listener für das Logo, um zur Startseite zurückzukehren
+            logo.addEventListener('click', function(e) {
+                e.preventDefault();
+                zeigeStart();
+            });
+
+        });
+    </script>
+
+</body>
+</html>
+
+
