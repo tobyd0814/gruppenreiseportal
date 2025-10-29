@@ -19,31 +19,31 @@ This is a specialized platform for organizing and booking travel for large group
 3. **Group Members:** Make payments, access trip information, use safety features
 4. **Chaperones:** Monitor group during travel, use safety and communication tools
 
+## Engineering Standards
+
+**IMPORTANT:** This project follows strict engineering standards and protocols. All development must adhere to the guidelines in [ENGINEERING.md](ENGINEERING.md), which covers:
+
+- Core principles (Enterprise-grade mandate, Security, Immutability)
+- Test-Driven Development (TDD) methodology
+- Version control and Git workflow (Conventional Commits)
+- CI/CD pipeline and quality gates
+- Code style conventions
+- API standards
+- Database conventions
+- Logging and error handling
+
+**Key Requirements:**
+- **TDD is mandatory** - Write failing tests first, then implement
+- **Conventional Commits required** - Format: `<type>(<scope>): <subject>`
+- **85% minimum code coverage** - All services must maintain high test coverage
+- **Security first** - OWASP Top 10 compliance, no secrets in code
+- **Immutable infrastructure** - No manual changes to environments
+
 ## Tech Stack
 
-*(To be defined)*
+*(To be defined based on project requirements)*
 
 ## Project Structure
-
-*(To be defined)*
-
-## Development Commands
-
-*(To be defined)*
-
-## Code Style & Conventions
-
-*(To be defined)*
-
-## Testing Requirements
-
-*(To be defined)*
-
-## API Standards
-
-*(To be defined)*
-
-## Database & Data Layer
 
 *(To be defined)*
 
