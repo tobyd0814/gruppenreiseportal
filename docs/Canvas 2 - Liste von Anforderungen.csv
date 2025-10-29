@@ -1,0 +1,58 @@
+ID,Typ der Anforderung,Anforderung,Kapitel/Referenz
+FR-001,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, eine Angebotsanfrage (RFP) für eine Gruppenreise zu erstellen.",Sect 5.1
+FR-002,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, in einer RFP die Anzahl der Reisenden, gewünschte Zimmerkonfigurationen, Reisedaten und spezielle Anforderungen (z.B. Proberaum) zu spezifizieren.",Sect 5.1; Sect 8.1
+FR-003,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, eine Angebotsanfrage (RFP) zu empfangen.",Sect 8.2
+FR-004,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, ein individuelles Angebot als Antwort auf eine RFP zu erstellen.",Sect 5.1; Sect 8.2
+FR-005,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, einen Zimmerblock bei einem Anbieter zu reservieren.",Sect 5.1
+FR-006,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, einen Zimmerblock für eine Anfrage zu konfigurieren und temporär zu blockieren.",Sect 8.2
+FR-007,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, eine digitale Zimmerliste zu erstellen.",Sect 5.1
+FR-008,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, Gruppenmitglieder spezifischen Zimmern und Betten in der Zimmerliste zuzuweisen.",Sect 5.1
+FR-009,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, die Zimmerliste sicher mit dem Immobilienverwalter zu teilen.",Sect 5.1
+FR-010,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, einen automatisierten Prozess für geteilte Zahlungen (Split Payments) für eine Reise zu initiieren.",Sect 5.2
+FR-011,Funktional,"Das System muss fähig sein, individuelle Zahlungslinks für jedes Gruppenmitglied (oder dessen Eltern) zu generieren.",Sect 5.2
+FR-012,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, einen automatisierten Ratenzahlungsplan (Installment Plan) mit spezifischen Fälligkeitsdaten zu definieren.",Sect 5.2
+FR-013,Funktional,"Das System muss fähig sein, Zahlungen von Gruppenmitgliedern (oder Eltern) über verschiedene Zahlungsmethoden zu akzeptieren. [FRAGE AN AUFTRAGGEBER: Welche Zahlungsmethoden sind erforderlich (Kreditkarte, PayPal, Überweisung)?]",Sect 5.2
+FR-014,Funktional,"Das System muss fähig sein, automatische Zahlungserinnerungen an Mitglieder zu senden, deren Zahlung überfällig ist.",Sect 5.2
+FR-015,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, ein Finanz-Dashboard anzuzeigen.",Sect 5.2
+FR-016,Funktional,"Falls das Finanz-Dashboard angezeigt wird, muss das System dem Gruppen-Organisator den Gesamtbetrag, den bereits bezahlten Betrag, den offenen Betrag und den Zahlungsstatus jedes einzelnen Mitglieds (bezahlt, ausstehend, überfällig) anzeigen.",Sect 5.2
+FR-017,Funktional,"Das System muss fähig sein, eine zentrale, detaillierte Gruppenrechnung für institutionelle Zwecke zu generieren.",Sect 5.2
+FR-018,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, einen kollaborativen digitalen Reiseplan zu erstellen und zu bearbeiten.",Sect 6.1
+FR-019,Funktional,"Falls der Reiseplan bearbeitet wird, muss das System die Änderungen sofort für alle Gruppenmitglieder mit App-Zugang synchronisieren.",Sect 6.1
+FR-020,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, Dokumente (z.B. Tickets, Karten) an einzelne Punkte im Reiseplan anzuhängen.",Sect 6.1
+FR-021,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, Bodentransport (z.B. Charterbusse) über eine integrierte Schnittstelle zu suchen und zu buchen.",Sect 6.2
+FR-022,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, Gruppen-Catering (z.B. Box-Lunches) über eine integrierte Schnittstelle zu suchen und zu buchen.",Sect 6.2
+FR-023,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, Gruppen-Aktivitäten (z.B. Museumstickets) über eine integrierte Schnittstelle zu suchen und zu buchen.",Sect 6.2
+FR-024,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, digitale Genehmigungsformulare (z.B. Einverständniserklärung der Eltern, medizinische Formulare) zu erstellen und anzupassen.",Sect 6.3
+FR-025,Funktional,"Das System muss fähig sein, digitale Genehmigungsformulare elektronisch an Gruppenmitglieder (oder Eltern) zu versenden.",Sect 6.3
+FR-026,Funktional,"Das System muss fähig sein, rechtsverbindliche digitale Unterschriften für Genehmigungsformulare zu akzeptieren.",Sect 6.3
+FR-027,Funktional,"Das System muss fähig sein, den Status der eingegangenen Formulare zu verfolgen und automatische Erinnerungen für fehlende Formulare zu senden.",Sect 6.3
+FR-028,Funktional,"Das System muss einem autorisierten Benutzer (Organisator, Betreuer) die Möglichkeit bieten, eine Live-Gruppenkarte mit den Echtzeit-Standorten der Gruppenmitglieder anzuzeigen.",Sect 7.1
+FR-029,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, einen Geofence (virtuellen Bereich) auf einer Karte zu definieren.",Sect 7.1
+FR-030,Funktional,"Falls ein Gruppenmitglied den definierten Geofence verlässt, muss das System automatisch einen Alarm an die Betreuer senden.",Sect 7.1
+FR-031,Funktional,"Das System muss einem Betreuer die Möglichkeit bieten, eine digitale Kopfzählung (Check-in-Anfrage) zu initiieren.",Sect 7.1
+FR-032,Funktional,"Das System muss einem Gruppenmitglied die Möglichkeit bieten, seine Anwesenheit bei einer digitalen Kopfzählung per Knopfdruck zu bestätigen.",Sect 7.1
+FR-033,Funktional,"Das System muss einem Betreuer die Möglichkeit bieten, eine Echtzeit-Zusammenfassung einer digitalen Kopfzählung (inkl. fehlender Mitglieder) anzuzeigen.",Sect 7.1
+FR-034,Funktional,"Das System muss einem Gruppen-Organisator die Möglichkeit bieten, eine Massen-Alarm-Nachricht (Broadcast) an alle Gruppenmitglieder zu senden.",Sect 7.2
+FR-035,Funktional,"Das System muss fähig sein, rollenbasierte Kommunikationskanäle (z.B. 'Nur Betreuer', 'Betreuer-Gruppe-A') zu unterstützen.",Sect 7.2
+FR-036,Funktional,"Das System muss einem Gruppenmitglied die Möglichkeit bieten, einen SOS-Notfallknopf zu betätigen.",Sect 7.2
+FR-037,Funktional,"Falls der SOS-Notfallknopf betätigt wird, muss das System sofort einen Alarm inkl. des genauen Standorts des Mitglieds an alle Betreuer und den Organisator senden.",Sect 7.2
+FR-038,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, die exakte Bettenkonfiguration für jedes Zimmer (z.B. '4 Etagenbetten') zu spezifizieren.",Sect 8.1
+FR-039,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, die Kapazität und Größe von Gemeinschaftsräumen (z.B. Speisesaal) zu spezifizieren.",Sect 8.1
+FR-040,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, spezielle Ausstattungsmerkmale (z.B. 'Proberaum', 'Busparkplatz') in einer Checkliste auszuwählen.",Sect 8.1
+FR-041,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, Sicherheits- und Compliance-Dokumente (z.B. Brandschutzzertifikat) hochzuladen.",Sect 8.1
+FR-042,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, Preise pro Person festzulegen.",Sect 8.2
+FR-043,Funktional,"Das System muss einem Großformat-Immobilienverwalter die Möglichkeit bieten, gestaffelte Preise (Tiered Pricing) basierend auf der Gruppengröße zu definieren.",Sect 8.2
+NFR-001,Nicht-funktional - Eigenschaft,"Das System muss B2B-Workflows (Angebote, Rechnungen, Zimmerblöcke) unterstützen, die sich von Standard-B2C-Buchungen unterscheiden.",Sect 4.4, 8.2
+NFR-002,Nicht-funktional - Eigenschaft,"Das System muss alle Finanztransaktionen sicher (PCI-compliant [ANNAHME]) verarbeiten.",Sect 5, Concl 1
+NFR-003,Nicht-funktional - Eigenschaft,"Das System muss alle personenbezogenen Daten, insbesondere von Minderjährigen, gemäß geltenden Datenschutzgesetzen (z.B. DSGVO [ANNAHME]) speichern und verarbeiten.",Sect 6.3, 7.1, Concl 5
+NFR-004,Nicht-funktional - Eigenschaft,"Digitale Unterschriften für Genehmigungen müssen rechtsverbindlich sein.",Sect 6.3
+NFR-005,Nicht-funktional - Prozess,"Echtzeit-Sicherheitsfunktionen (Live Map, SOS, Geofencing) müssen eine minimale Latenz aufweisen. [FRAGE AN AUFTRAGGEBER: Was ist die maximal akzeptable Latenz für einen SOS-Alarm?]",Sect 7
+NFR-006,Nicht-funktional - Prozess,"Live-Updates des Reiseplans müssen innerhalb von Sekunden [FRAGE AN AUFTRAGGEBER: Was ist die maximal akzeptable Synchronisationszeit?] an alle verbundenen Geräte der Mitglieder verteilt werden.",Sect 6.1
+NFR-007,Nicht-funktional - Umgebung,"Das System muss eine mobile Anwendung (App) für Gruppenmitglieder, Betreuer und Organisatoren bereitstellen, die auf iOS und Android [ANNAHME] läuft.",Sect 6.1, 7.1, 7.2
+NFR-008,Nicht-funktional - Umgebung,"Die mobilen Sicherheitsfunktionen (Live Map, Geofencing, SOS) müssen auf die GPS-Dienste des Smartphones zugreifen können.",Sect 7.1, 7.2
+NFR-009,Nicht-funktional - Eigenschaft,"Das System muss API-Integrationen zu Drittanbietern für Transport (Charterbusse), Catering und Aktivitäten (z.B. Viator, GetYourGuide) bereitstellen.",Sect 6.2
+???,Funktional,"[LÜCKE] Das System muss einem Gruppenmitglied (oder Elternteil) die Möglichkeit bieten, sich für eine Reise zu registrieren und ein Benutzerkonto zu erstellen.",Implizit aus Sect 5.2
+???,Funktional,"[LÜCKE] Das System muss einem Gruppenmitglied (oder Elternteil) die Möglichkeit bieten, Zahlungsinformationen sicher zu speichern und zu verwalten.",Implizit aus Sect 5.2
+???,Funktional,"[LÜCKE] Das System muss einem Gruppen-Organisator die Möglichkeit bieten, ein Gruppenmitglied (oder Elternteil) zu einer Reise einzuladen.",Implizit aus Sect 5.2
+???,Funktional,"[LÜCKE] Das System muss einem Gruppen-Organisator die Möglichkeit bieten, ein Mitglied aus einer Reise zu entfernen (Stornierung).",Implizit
+???,Funktional,"[LÜCKE] Das System muss fähig sein, die finanziellen Anpassungen (z.B. Rückerstattung, Neuverteilung der Kosten) bei der Stornierung eines Mitglieds zu verwalten. [FRAGE AN AUFTRAGGEBER: Wie sind die Stornoregeln für Einzelpersonen?]",Implizit

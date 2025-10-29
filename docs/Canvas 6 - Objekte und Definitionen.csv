@@ -1,0 +1,19 @@
+ID,Objekt,Definition,Referenz
+1,Gruppen-Organisator (Group Organizer),"Zentraler Benutzer (z.B. Lehrer, Chorleiter), der die Reise end-to-end plant, bucht und verwaltet. Trägt die logistische, finanzielle und oft rechtliche Verantwortung.",Sect 4.1
+2,Gruppenmitglied (Group Member),"Endnutzer der Reise (z.B. Schüler, Musiker, Athlet). Oft minderjährig, wobei die Eltern/Erziehungsberechtigten für Zahlungen und Genehmigungen interagieren.",Sect 4.2
+3,Betreuer (Chaperone / Guardian),"Erwachsener (z.B. Lehrer, Elternteil), der während der Reise für die Sicherheit und Aufsicht einer zugewiesenen Untergruppe von Mitgliedern verantwortlich ist.",Sect 4.3
+4,Großformat-Immobilienverwalter (Large-Format Property Manager),"Anbieter-Seite (B2B-Benutzer), der Immobilien verwaltet, die für große Gruppen ausgelegt sind (z.B. Hostels, Wohnheime, Tagungszentren).",Sect 4.4
+5,Request for Proposal (RFP) / Angebotsanfrage,"Ein digitales Formular, mit dem ein Organisator seine detaillierten Gruppenanforderungen (Daten, Zimmer, Sonderwünsche) an mehrere Anbieter gleichzeitig senden kann, um individuelle Angebote zu erhalten.",Sect 5.1
+6,Zimmerblock (Room Block),"Eine reservierte Anzahl von Zimmern oder Betten, die ein Anbieter für einen Organisator für einen festgelegten Zeitraum blockiert, um diesem Zeit für die finale Organisation und Zahlung zu geben.",Sect 5.1
+7,Zimmerliste (Rooming List),"Ein digitales Werkzeug, mit dem der Organisator nach der Buchung spezifische Gruppenmitglieder den gebuchten Zimmern und Betten zuweisen kann.",Sect 5.1
+8,Geteilte Zahlung (Split Payment),"Kern-Finanzfunktion, bei der das System die Gesamtkosten automatisch auf alle Mitglieder aufteilt und individuelle Zahlungslinks generiert, sodass der Organisator kein Geld einsammeln muss.",Sect 5.2
+9,Ratenzahlung (Installment Plan),"Eine Finanzfunktion, die es dem Organisator erlaubt, einen Zahlungsplan mit mehreren Fälligkeitsdaten (z.B. Anzahlung, Restzahlung) festzulegen.",Sect 5.2
+10,Gruppenrechnung (Group Invoicing),"Eine einzelne, zentrale und detaillierte Rechnung, die für institutionelle Zwecke (z.B. Schulverwaltung) generiert wird und alle Kosten und Posten der Reise zusammenfasst.",Sect 5.2
+11,Kollaborativer Reiseplan (Collaborative Itinerary),"Ein web- und mobil-basiertes Dokument, das den detaillierten Zeitplan der Reise enthält und bei Änderungen durch den Organisator für alle Mitglieder sofort live aktualisiert wird.",Sect 6.1
+12,Digitale Genehmigung (Digital Waiver / Permission Slip),"Ein digitales Formular (z.B. elterliche Erlaubnis, medizinische Freigabe), das vom Organisator erstellt, elektronisch an Eltern gesendet und rechtsverbindlich digital signiert werden kann.",Sect 6.3
+13,Live-Gruppenkarte (Live Group Map),"Eine Funktion in der mobilen App, die autorisierten Betreuern die Echtzeit-Standorte aller Gruppenmitglieder (via Smartphone-GPS) auf einer Karte anzeigt.",Sect 7.1
+14,Geofencing-Alarm (Geofencing Alert),"Ein Alarm, der automatisch an Betreuer gesendet wird, wenn ein Gruppenmitglied einen vordefinierten virtuellen Bereich (Geofence) verlässt.",Sect 7.1
+15,Digitaler Kopfzählungs-Check (Digital Headcount Tool),"Eine Funktion, bei der ein Betreuer eine Anwesenheitsabfrage startet und Mitglieder ihre Anwesenheit per Knopfdruck in der App bestätigen.",Sect 7.1
+16,SOS-Notfallknopf (Emergency SOS Button),"Ein Knopf in der App, der bei Betätigung durch ein Mitglied sofort einen Alarm mit dem genauen Standort an alle Betreuer und den Organisator sendet.",Sect 7.2
+17,Bettenkonfiguration (Bed Configuration),"Eine detaillierte Angabe des Anbieters zur genauen Bettenaufteilung in einem Zimmer (z.B. '4 Etagenbetten (8 Schlafplätze)'), was für die Zimmerlisten-Erstellung entscheidend ist.",Sect 8.1
+18,Gestaffelter Preis (Tiered Pricing),"Ein Preismodell, bei dem der Preis pro Person sinkt, je größer die Gesamtgruppe ist.",Sect 8.2

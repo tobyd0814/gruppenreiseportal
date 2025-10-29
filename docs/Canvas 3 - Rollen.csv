@@ -1,0 +1,5 @@
+Rolle,Beschreibung,User Stories
+Gruppen-Organisator (Group Organizer),"Zentraler Benutzer (z.B. Lehrer, Chorleiter), der die Reise end-to-end plant, bucht, finanziert und verwaltet.",US-001, US-003, US-005, US-006, US-007, US-008, US-009, US-010, US-014, ???-US-002, ???-US-003, ???-US-004
+Gruppenmitglied (Group Member),"Endnutzer der Reise (z.B. Schüler, Musiker). Interagiert während der Reise mit der App (Sicherheit, Reiseplan). Oft vertreten durch Eltern/Erziehungsberechtigte für Zahlungen und Genehmigungen.",US-004, US-011, US-012, ???-US-001
+Betreuer (Chaperone / Guardian),"Erwachsener (z.B. Lehrer, Elternteil), der während der Reise für die Sicherheit und Aufsicht einer zugewiesenen Untergruppe von Mitgliedern verantwortlich ist.",US-009, US-010, US-013
+Großformat-Immobilienverwalter (Large-Format Property Manager),"Anbieter-Seite (B2B-Benutzer), der Immobilien verwaltet, die für große Gruppen ausgelegt sind (z.B. Hostels, Wohnheime, Tagungszentren).",US-002, US-015, US-016, US-017, US-018

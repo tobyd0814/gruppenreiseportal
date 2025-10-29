@@ -1,0 +1,146 @@
+ID,US-ID,Testfall,Hinweis
+TC-001,US-001,"Funktionalität: RFP Erstellung
+Szenario: Organisator erstellt eine gültige RFP
+Angenommen ein Gruppen-Organisator ist eingeloggt und auf der 'Neue RFP' Seite
+Wenn der Organisator 40 Reisende, '10x 4-Bett, 4x 1-Bett' Zimmer, Reisedaten und den Sonderwunsch 'Proberaum' eingibt
+Und auf 'RFP senden' klickt
+Dann sollte die RFP erstellt werden
+Und der Organisator sollte eine Bestätigung sehen",Dieser Testfall prüft den 'Happy Path' der RFP-Erstellung.
+TC-002,US-001,"Funktionalität: RFP Erstellung
+Szenario: Organisator erstellt eine ungültige RFP (fehlende Daten)
+Angenommen ein Gruppen-Organisator ist eingeloggt und auf der 'Neue RFP' Seite
+Wenn der Organisator 40 Reisende eingibt, aber keine Reisedaten
+Und auf 'RFP senden' klickt
+Dann sollte die RFP nicht erstellt werden
+Und der Organisator sollte eine Fehlermeldung sehen, die auf die fehlenden Reisedaten hinweist",Prüft die Validierung von Pflichtfeldern.
+TC-003,US-002,"Funktionalität: RFP Beantwortung
+Szenario: Anbieter beantwortet eine RFP mit einem Angebot
+Angenommen ein Immobilienverwalter ist eingeloggt und hat eine offene RFP für 40 Personen
+Wenn der Verwalter die Verfügbarkeit prüft
+Und ein Angebot mit '45€/Person/Nacht' erstellt
+Und das Angebot absendet
+Dann sollte der Gruppen-Organisator das Angebot in seinem Dashboard sehen",Prüft den 'Happy Path' für den Anbieter.
+TC-004,US-002,"Funktionalität: RFP Beantwortung
+Szenario: Anbieter lehnt eine RFP mangels Verfügbarkeit ab
+Angenommen ein Immobilienverwalter ist eingeloggt und hat eine offene RFP
+Wenn der Verwalter keine Verfügbarkeit hat
+Und die RFP ablehnt
+Dann sollte der Gruppen-Organisator eine Benachrichtigung über die Ablehnung erhalten",Prüft den Ablehnungsprozess.
+TC-005,US-003,"Funktionalität: Finanzierung einrichten
+Szenario: Organisator richtet Split Payment mit Ratenzahlung ein
+Angenommen ein Gruppen-Organisator hat ein Angebot für eine Reise angenommen
+Wenn der Organisator 'Split Payment' auswählt
+Und einen Ratenplan mit '50% Anzahlung bis 01.12.' und '50% Restzahlung bis 31.01.' definiert
+Und die Finanzierung bestätigt
+Dann sollten für alle (eingeladenen) Mitglieder Zahlungsaufforderungen gemäß Ratenplan erstellt werden",Prüft die Kombination von Split Payment und Ratenzahlung.
+TC-006,US-004,"Funktionalität: Anteil bezahlen
+Szenario: Elternteil bezahlt den Anteil für ein Kind
+Angenommen ein Elternteil hat einen Zahlungslink für eine Reise erhalten
+Wenn das Elternteil den Link öffnet
+Und eine gültige Zahlungsmethode (z.B. Kreditkarte) auswählt und bestätigt
+Dann sollte die Zahlung als 'Bezahlt' im System verbucht werden
+Und das Finanz-Dashboard des Organisators sollte den Status 'Bezahlt' für dieses Mitglied anzeigen",Prüft den Zahlungseingang und die Aktualisierung des Dashboards.
+TC-007,US-005,"Funktionalität: Finanzen überwachen
+Szenario: Organisator prüft überfällige Zahlungen
+Angenommen ein Gruppen-Organisator ist eingeloggt und öffnet das Finanz-Dashboard
+Und das Fälligkeitsdatum für die Anzahlung ist überschritten
+Und 5 von 40 Mitgliedern haben noch nicht bezahlt
+Wenn der Organisator nach 'Überfällig' filtert
+Dann sollte er genau die 5 säumigen Mitglieder sehen
+Und die Option haben, eine Mahnung zu senden",Prüft die Dashboard-Filter und Mahnfunktion.
+TC-008,US-006,"Funktionalität: Reiseplan erstellen
+Szenario: Organisator aktualisiert einen Reiseplan
+Angenommen ein Gruppen-Organisator hat einen Reiseplan erstellt
+Und ein Gruppenmitglied (Elternteil) hat die App geöffnet und sieht den Reiseplan
+Wenn der Organisator den Programmpunkt '14:00 Museum' auf '15:00 Museum' ändert
+Dann sollte der Reiseplan des Gruppenmitglieds (Elternteil) sich automatisch (innerhalb von NFR-006) aktualisieren",Prüft die Live-Synchronisation des Reiseplans.
+TC-009,US-007,"Funktionalität: Transport buchen
+Szenario: Organisator bucht einen Bus
+Angenommen ein Gruppen-Organisator ist im 'Transport'-Bereich seiner Reise
+Wenn der Organisator einen Bus für '44 Personen' von 'A nach B' am 'Reisetag 1' sucht
+Und ein Angebot auswählt und bucht
+Dann sollte die Buchung bestätigt werden
+Und die Kosten sollten [ANNAHME] der Gesamtrechnung der Reise hinzugefügt werden",Prüft die Integration des Transport-Marktplatzes.
+TC-010,US-008,"Funktionalität: Digitale Genehmigung einholen
+Szenario: Elternteil signiert eine Genehmigung
+Angenommen ein Organisator hat eine 'Einverständniserklärung' versendet
+Und ein Elternteil hat den Link zur Signatur erhalten
+Wenn das Elternteil das Formular öffnet und digital signiert
+Dann sollte das Dokument als 'Signiert' gespeichert werden
+Und das Dashboard des Organisators sollte den Status 'Eingegangen' für dieses Mitglied anzeigen",Prüft den Ende-zu-Ende-Prozess der digitalen Signatur.
+TC-011,US-009,"Funktionalität: Gruppe live sehen
+Szenario: Betreuer prüft die Position der Gruppe
+Angenommen ein Betreuer ist eingeloggt und hat die Live-Gruppenkarte geöffnet
+Und 3 Mitglieder seiner Gruppe haben das GPS-Tracking aktiviert
+Wenn die Mitglieder sich bewegen
+Dann sollte der Betreuer die aktualisierten Positionen auf der Karte sehen",Prüft die Kernfunktion des Live-Trackings (abhängig von NFR-008).
+TC-012,US-010,"Funktionalität: Gruppe informieren
+Szenario: Organisator sendet einen Broadcast
+Angenommen ein Gruppen-Organisator ist eingeloggt
+Und 40 Mitglieder haben die App installiert
+Wenn der Organisator eine Massen-Alarm-Nachricht 'Treffen um 18:00' sendet
+Dann sollten alle 40 Mitglieder eine Push-Notification mit dieser Nachricht erhalten",Prüft die Broadcast-Funktion.
+TC-013,US-011,"Funktionalität: Notfall melden
+Szenario: Mitglied löst SOS-Alarm aus
+Angenommen ein Gruppenmitglied hat sich verlaufen und ist eingeloggt
+Und 3 Betreuer sind ebenfalls eingeloggt
+Wenn das Mitglied den SOS-Knopf drückt
+Dann sollten alle 3 Betreuer sofort (innerhalb von NFR-005) einen Alarm erhalten
+Und der Alarm sollte den genauen Standort des Mitglieds anzeigen",Prüft die kritische Sicherheitsfunktion SOS.
+TC-014,US-013,"Funktionalität: Kopfzählung durchführen
+Szenario: Betreuer führt digitale Kopfzählung durch
+Angenommen ein Betreuer ist eingeloggt und betreut 10 Mitglieder
+Wenn der Betreuer eine 'Digitale Kopfzählung' initiiert
+Und 9 Mitglieder in der App auf 'Anwesend' tippen (siehe US-012)
+Dann sollte der Betreuer in seinem Dashboard sehen, dass 9/10 anwesend sind
+Und den Namen des 1 fehlenden Mitglieds sehen",Prüft die Zähllogik für den Betreuer.
+TC-015,US-014,"Funktionalität: Zimmerliste zuweisen
+Szenario: Organisator weist Mitglieder einem Zimmer zu
+Angenommen ein Organisator hat ein '4-Bett-Zimmer' gebucht
+Und hat 4 Mitglieder ('Anna', 'Berta', 'Clara', 'Doris')
+Wenn der Organisator diese 4 Mitglieder dem '4-Bett-Zimmer' zuweist
+Und die Zimmerliste speichert
+Dann sollte die Zuweisung gespeichert sein
+Und der Immobilienverwalter sollte die aktualisierte Zimmerliste einsehen können",Prüft die Zuweisungslogik und die Datenfreigabe für den Anbieter.
+TC-016,US-015,"Funktionalität: Unterkunft detailliert listen
+Szenario: Anbieter legt Bettenkonfiguration fest
+Angenommen ein Immobilienverwalter bearbeitet sein Listing
+Wenn der Verwalter für 'Raum 101' die Konfiguration '4 x Etagenbett (8 Schlafplätze)' eingibt
+Und speichert
+Dann sollte diese Detailinformation in der Angebotsansicht für den Organisator sichtbar sein",Prüft, ob die Detaildaten (wichtig für US-001) korrekt gespeichert und angezeigt werden.
+TC-017,US-018,"Funktionalität: Gestaffelte Preise anbieten
+Szenario: Preis wird automatisch anhand der Gruppengröße berechnet
+Angenommen ein Immobilienverwalter hat gestaffelte Preise definiert ('40-59 Personen: 38€')
+Und ein Organisator erstellt eine RFP für 44 Personen
+Wenn der Verwalter ein Angebot erstellt
+Dann sollte das System automatisch den Preis von 38€/Person vorschlagen",Prüft die automatische Anwendung der Preisstaffel.
+TC-018,???-US-001,"Funktionalität: Reise-Registrierung
+Szenario: Elternteil registriert sich über Einladungslink
+Angenommen ein Organisator hat ein Elternteil per E-Mail (siehe ???-US-003) eingeladen
+Wenn das Elternteil auf den Einladungslink klickt
+Und ein Konto mit E-Mail und Passwort erstellt
+Und die Registrierung abschließt
+Dann sollte das Elternteil eingeloggt sein
+Und der Reise zugeordnet sein",Testet den Onboarding-Prozess für die zahlende Person (Lücke).
+TC-019,???-US-002,"Funktionalität: Einzelstornierung durchführen
+Szenario: Organisator storniert ein Mitglied (mit Rückerstattung)
+Angenommen ein Mitglied (Elternteil) hat bereits 200€ bezahlt
+Und der Organisator storniert dieses Mitglied
+Und gemäß der Stornoregeln (des Anbieters) besteht Anspruch auf 100€ Rückerstattung
+Wenn der Organisator die Stornierung bestätigt
+Dann sollte das Mitglied automatisch 100€ zurückerstattet bekommen
+Und das Finanz-Dashboard sollte die Stornierung und die reduzierte Gesamtsumme anzeigen",Testet den komplexen Storno-Fall (Lücke).
+TC-020,???-US-003,"Funktionalität: Organisator lädt Mitglieder ein
+Szenario: Organisator lädt Mitglieder per E-Mail-Liste ein
+Angenommen ein Organisator hat eine Reise erstellt
+Wenn der Organisator eine CSV-Datei mit 40 E-Mail-Adressen (Eltern) hochlädt
+Und auf 'Einladen' klickt
+Dann sollte das System 40 Einladungs-E-Mails (siehe ???-US-001) versenden
+Und das Dashboard sollte 40 'Eingeladene' Mitglieder anzeigen",Testet den Einladungsprozess (Lücke).
+TC-021,???-US-004,"Funktionalität: Zentrale Rechnung bezahlen
+Szenario: Schulverwaltung bezahlt per Überweisung
+Angenommen ein Organisator hat 'Zentrale Rechnungsstellung' gewählt
+Und die Schulverwaltung hat die PDF-Rechnung erhalten und den Betrag überwiesen
+Und die Zahlung ist eingegangen (manueller oder automatischer Abgleich [ANNAHME])
+Wenn der Organisator (oder Admin) die Zahlung als 'Bezahlt' markiert
+Dann sollte das Finanz-Dashboard die Reise als 'Vollständig bezahlt' anzeigen",Testet den alternativen Bezahlweg für Institutionen (Lücke).

@@ -1,0 +1,9 @@
+ID,Typ,Prüfkriterium,Referenz
+1,DoD,"Alle Finanztransaktionen sind sicher und erfolgen über verschlüsselte Verbindungen (z.B. PCI-compliant).",NFR-002
+2,DoD,"Alle personenbezogenen Daten, insbesondere von Minderjährigen (Standort, Medizinische Daten, Zahlungsdaten), werden konform zu den geltenden Datenschutzgesetzen (z.B. DSGVO) behandelt.",NFR-003
+3,DoD,"Die mobile Anwendung ist mit den in der Spezifikation definierten iOS- und Android-Versionen kompatibel.",NFR-007
+4,DoD,"Die Funktionalität ist auf den definierten Ziel-Browsern und -Endgeräten (mobil, Desktop) getestet.",FEHLT
+5,DoR,"Die User Story ist so formuliert, dass sie die Akzeptanzkriterien (Liste von FR/NFR-IDs) klar benennt.",(Prozessvorgabe)
+6,DoR,"Alle externen API-Abhängigkeiten (z.B. für Buchung von Transport, Aktivitäten) sind identifiziert und deren Verträge/Schnittstellen sind geklärt.",NFR-009
+7,DoR,"Alle rechtlichen Anforderungen an die Speicherung von Daten und die Durchführung von Aktionen (z.B. Rechtsgültigkeit digitaler Signaturen) sind geklärt.",NFR-004
+8,DoR,"Spezifische Performance-Anforderungen (z.B. Latenz für SOS-Alarme, Synchronisationszeit für Reisepläne) sind definiert.",NFR-005, NFR-006
